@@ -1,0 +1,296 @@
+body {
+    background-color: #fafafa;
+}
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img {
+    height: 22px;
+    margin-left: 14px;
+    padding-top: 14px;
+}
+.logo {
+    display: flex;
+}
+.profile {
+    display: flex;
+}
+input {
+    height: 70%;
+}
+.search {
+    display: flex;
+    margin-left: 100px;
+}
+
+.logo span {
+    margin: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.photo {
+    height: 35px;
+    margin-right: 14px;
+    padding-top: 14px;
+}
+
+.dropdown {
+    height: 20px;
+}
+
+.notification {
+    height: 23px;
+    margin-right: 45px;
+    padding-top: 18px;
+}
+
+.profile span {
+    margin: 18px 18px 0px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body {
+    display: flex;
+}
+
+.sidebar {
+    background-color: white;
+    width: 170px;
+    height: 675px;
+}
+
+.sidebar img {
+    height: 20px;
+    padding-top: 2px;
+}
+
+.sidebar div {
+    margin: 20px 30px;
+    width: 130px;
+}
+
+.sidebar div span {
+    margin-left: 1px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#sidebar{
+    background-color: #FFFFFF;
+    width: 242px;
+    min-height: 100vh;
+}
+
+.dashboard{
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    padding-left: 0.7rem;
+    border-radius: 5px;
+    margin-bottom: 8%;
+}
+#dashboard {
+    width: 84%;
+    margin: 3.5rem;
+    margin-top: 2%;
+}
+.d-title{
+    font-family: Roboto;
+}
+.dashboard-active{
+    background-color: #c8242f3b;
+    color: #c8242f;
+}
+
+#container{
+    display: flex; 
+}
+
+#sale {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+
+.sale{
+    display: flex;
+    background-color: #FFFFFF;
+    width: 18%;
+    height: 116px;   
+    justify-content: center;
+    align-items: center;  
+}
+
+.sale img{
+    display: flex;
+    width: 3rem;
+}
+
+.inside{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    font-family: Roboto;
+}
+#graph{
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph1,.graph2{
+    margin-top: 25px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.graph1{
+    width: 55%;
+}
+
+.graph2{
+    width: 30%;
+}
+
+.graph1 img{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.inner h2,.inner p{
+    margin: 0%;
+} 
+
+.graph-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph-title p{
+    margin: 1%;
+    font-family: Roboto;
+    color: #3E3E3E;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.h5{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    color: #ADADAD;
+    font-family: Roboto;
+    letter-spacing: 0.5px;
+}
+
+h5{
+    margin: 0%;
+}
+
+.h5-active{
+    color: #C8242F;
+    border-bottom: 2px solid #C8242F;
+}
+
+.graph2 img{
+    width: 60%;
+    margin-left: calc(50% - 30%);
+}
+
+.desc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.contry-name{
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+}
+
+.contry-name p{
+    margin-left: 10px;
+}
+
+.dot{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+#table{
+    background-color: #FFFFFF;
+    margin-top: 2%;
+    padding: 2rem;
+    font-family: Roboto;
+}
+
+.invoice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto;
+}
+
+.invoice-title{
+    font-size: 22px;
+    color: #3E3E3E;
+    font-weight: 600;
+    width: 18%;
+}
+
+.invoice p{
+    margin: 0%;
+}
+
+.view-all{
+    color: #C8242F;
+}
+
+table {
+    margin-top: 2%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    /* border: 1px solid #ddd; */
+}
+  
+th, td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ADADAD;
+}
+
+th{
+    color: #ADADAD;
+    font-weight: 100;
+}
+
+.common-status
+{
+  margin: 0;
+  text-align: center;
+  width: fit-content;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+.paid
+{
+  background-color: #3cdd5f46;
+  color: #3CDD5F;
+}
+.failed
+{
+  background-color: #ff454551;
+  color: #FF4545;
+}
+.pending
+{
+  color: #BABABA;
+  background-color: #bababa67;
+}   
