@@ -1,155 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analysis</title>
-    <link rel="stylesheet" href="css/analysis.css" type="text/css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
+    <title>Innerpage</title>
+    <link type="text/css" rel="stylesheet" href="css/analysis.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-
 <body>
-    <div class="maininnerpage">
-        <div class="header">
-            <img src="images/menu-bar.svg" class="menu-bar">
-            <img src="images/header-logo.svg" class="header-logo">
-            <img src="images/search-icon.svg" class="search-icon">
-            <div class="txtheader1">Search</div>
-            <img src="images/notification-icon.svg" class="notification-icon">
-            <img src="images/profile.png" class="profile">
-            <div class="txtheader2">John Doe</div>
-            <img src="images/downward-arrow.svg" class="downward-arrow">
+    <div id="nav">
+        <div class="dropdown-logo">
+            <img style="cursor: pointer;" src="images/menu-bar.svg" alt="menu-bar" onclick="hide()">
+            <img src="images/header-logo.svg" alt="logo">
+        </div>
+        <div class="searchbar">
+            <img src="images/search-icon.svg" alt="search-icon">
+            <input type="text" placeholder="search">
+        </div>
+        <div class="notification">
+            <img src="images/notification-icon.svg" alt="notification">
+            <div class="profile">
+                <img src="images/profile.png" alt="profile">
+                <p>John Doe</p>
+                <img src="images/downward-arrow.svg" alt="downward-arrow">
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="sidebar" class="sidebar width-0">
+            <div class="sidebarsub">
+                <div class="dashboard searchbar-dash">
+                  <img src="images/search-icon.svg" alt="search-icon">
+                  <input type="text" placeholder="search">
+                </div>
+
+                <div class="dashboard">
+                    <img src="images/dashboard-default.svg" alt="dashboard-default">
+                    <p>Dashboard</p>
+                </div>
+                <div class="dashboard dashboard-active">
+                    <img src="images/graph-default.svg" alt="graph-default">
+                    <p>Analysis</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/inbox-default.svg" alt="inbox-default">
+                    <p>Inbox</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/clock-default.svg" alt="clock-default">
+                    <p>History</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/user-default.svg" alt="user-default">
+                    <p>Users</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/maintenance-default.svg" alt="maintenance-default">
+                    <p>Maintenance</p>
+                </div>
+                <div class="dashboard">
+                    <img src="images/setting-default.svg" alt="setting-default">
+                    <p>Setting</p>
+                </div>
+            </div>
         </div>
 
-        <div class="slidebar" style="height: 1890px;">
-            <div class="boxslider2"></div>
-            <img src="images/dashboard-default.svg" class="slider1">
-            <div class="txtslider1" style="color: #3E3E3E;">Dashboard</div>
-            <img src="images/graph-active.svg" class="slider2">
-            <div class="txtslider2" style="color: #C8242F;">Analysis </div>
-            <img src="images/inbox-default.svg" class="slider3">
-            <div class="txtslider3">Inbox</div>
-            <img src="images/clock-default.svg" class="slider4">
-            <div class="txtslider4">History</div>
-            <img src="images/user-default.svg" class="slider5">
-            <div class="txtslider5">Users</div>
-            <img src="images/maintenance-default.svg" class="slider6">
-            <div class="txtslider6">Maintenance</div>
-            <img src="images/setting-default.svg" class="slider7">
-            <div class="txtslider7">Setting</div>
+        <div class="analysis">
+          <h1>Analysis</h1>
+          <form>
+            <h5>One Column</h5>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Name" aria-describedby="emailHelp">
+              <select class="form-control form-select inputGroupSelect01">
+                <option selected>Dropdown</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Multiple line" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+
+            <div class="twocolumn"> 
+            <h5>Two column</h5>
+            <!-- <div class="row">
+              <div class="floating-label-group col">
+                <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+                <label class="floating-label">Name</label>
+              </div>
+              <div class="floating-label-group col">
+                <input type="text" class="form-control" placeholder="John Doe" aria-label="Last name">
+                <label class="floating-label">Username</label>
+              </div>
+              <div class="row"> 
+                <div class="floating-label-group col">
+                  <input type="password" class="form-control" placeholder="Password" aria-label="First name">
+                  <label class="floating-label">Password</label>
+                </div>
+                <select class="form-select col select1" id="inputGroupSelect01">
+                    <option selected>Dropdown</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+              </div>
+            </div> -->
+   
+              <div class="row">
+                <!-- <div class="form-control div2"> -->
+                  <div class="floating-label-group col-xl-6">
+                  <input type="text" id="name" class="form-control" autocomplete="off" autofocus required />
+                    <label class="floating-label">Name</label>
+                  </div>
+                  
+                  <div class="floating-label-group col-xl-6">
+                    <input type="text" id="username" class="form-control" autocomplete="off" autofocus required />
+                      <label class="floating-label">Username</label>
+                  </div>
+                <!-- </div> -->
+              </div>
+
+              <div class="row">
+                <!-- <div class="form-control div2"> -->
+                  <div class="floating-label-group col-xl-6 div2">
+                    <input type="password" id="password" class="form-control" autocomplete="off" required />
+                    <label class="floating-label">Password</label>
+                  </div>
+                
+                  <div class="floating-label-group col-xl-6 div2">
+                    <select class="form-control">
+                      <option selected>Dropdown</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                <!-- </div> -->
+              </div>
+            </div>
+
+            <div class="threecolumn">
+              <h5>Three Column</h5>
+              <!-- <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Focus" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Password" aria-label="Last name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control disabled" placeholder="John Doe" aria-label="Last name" disabled>
+                  </div>
+              </div> -->
+              <div class="row">
+                <!-- <div class="col-xl-3"> -->
+                  <div class="floating-label-group col-xl-4">
+                  <input type="text" id="focus" class="form-control" autocomplete="off" autofocus required />
+                    <label class="floating-label">Focus</label>
+                  </div>
+                
+                  <div class="floating-label-group col-xl-4">
+                  <input type="password" id="password1" class="form-control" autocomplete="off" required />
+                  <label class="floating-label">Password</label>
+                  </div>
+
+                  <div class="floating-label-group col-xl-4">
+                    <input type="text" id="disabled" class="form-control disabled" autocomplete="off" required disabled />
+                    <label class="floating-label">Disabled</label>
+                    </div>
+                <!-- </div> -->
+              </div>
+
+
+            </div>
+              <h5>Four Column</h5>
+              <div class="row">
+                <div class="floating-label-group col-xl-3">
+                    <!-- <input type="email" class="form-control" aria-describedby="emailHelp"> -->
+                    <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                    <div id="validationServer03Feedback" class="invalid-feedback">
+                      Enter valid data
+                    </div>
+                    <label class="floating-label">Designation</label>
+                </div>
+
+                <div class="floating-label-group col-xl-3">
+                  <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                    <div id="validationServer03Feedback" class="invalid-feedback">
+                      Enter your full Name as per ID
+                    </div>
+                    <label class="floating-label">Name</label>
+                </div>
+
+                <div class="floating-label-group col-xl-3">
+                  <input type="text" class="form-control" aria-label="Last name" required>
+                  <label class="floating-label">Username</label>
+                </div>
+
+                <div class="col-xl-3">
+                  <select class="form-control form-select inputGroupSelect01">
+                    <option selected>Select</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <h5>Other Design Elements</h5>
+                
+                <div class="fileupload">
+                  <h6>File Upload</h6>
+                    <div class="upload">
+                      <button class="upload-button btn"><img src="images/cloud-upload-icon.svg">Upload</button>
+                      <span class="upload-text">No item Selected</span>
+                    </div>
+                </div>
+
+                <div class="radio">
+                  <h6>Radio Button</h6>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Option 1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
+                    <label class="form-check-label" for="inlineRadio2">Option 2</label>
+                  </div>
+                </div>
+
+                <div class="checkbox">
+                  <h6>Check Box</h6>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" checked>
+                    <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
+                  </div>
+                </div>
+
+                <div class="snackbar">
+                  <h6>Snackbar</h6>
+                  <div class="row">
+                    <div class="alert danger d-flex align-items-center col" role="alert">
+                      <img src="images/error-icon.svg" class="error-img">
+                      This is an alert message!
+                    </div>
+                    <div class="alert primary d-flex align-items-center col" role="alert">
+                      <img src="images/info-icon.svg" class="error-img">
+                      This is an information message!
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="alert warning d-flex align-items-center col" role="alert">
+                      <img src="images/warning-icon.svg" class="error-img">
+                      This is an alert message!
+                    </div>
+                    <div class="alert success d-flex align-items-center col" role="alert">
+                      <img src="images/success-icon.svg" class="error-img">
+                      This is an Success message!
+                    </div>
+                  </div>
+                </div>
+
+                <div class="calltoaction">
+                  <h6>Call to action</h6>
+                  <!-- <button type="button" class="btn btn-danger red">Primary</button>
+                  <button type="button" class="btn white">Secondary</button> -->
+
+                  <button type="button" class="btn btn-outline-danger red">Primary</button>
+                  <button type="button" class="btn btn-outline-danger white">Secondary</button>
+                </div>
+
+                <div class="tabdiv">
+                  <h6>Tabs</h6>
+                   <!-- <div class="tab">
+                    <p class="highlighted-tab tab-data"><strong>Tab 1</strong></p>
+                    <p class="tab-data">Tab 2</p>
+                    <p class="tab-data">Tab 3</p>
+                  </div>
+                  <hr>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                  </p> -->
+
+                  <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'tab1')">Tab 1</button>
+                    <button class="tablinks" onclick="openCity(event, 'tab2')">Tab 2</button>
+                    <button class="tablinks" onclick="openCity(event, 'tab3')">Tab 3</button>
+                  </div>
+                  
+                  <div id="tab1" class="tabcontent">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, laudantium sed. Rerum ratione dolore, numquam, doloremque tempora vel incidunt voluptate eos tenetur neque debitis nisi atque saepe quis explicabo non.</p>
+                  </div>
+                  
+                  <div id="tab2" class="tabcontent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed, aperiam libero reprehenderit ullam quisquam, earum corrupti vel commodi suscipit, obcaecati nemo! Corrupti, pariatur. Dolore soluta repudiandae illo explicabo delectus.</p> 
+                  </div>
+                  
+                  <div id="tab3" class="tabcontent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corporis officia quia temporibus suscipit. Possimus, vel omnis velit blanditiis adipisci doloremque excepturi quidem vero perferendis fugit quo recusandae harum iure.</p>
+                  </div>
+                </div>
+
+              </div>
+          </form>
         </div>
-    <div class="box1"></div>
-        <h2 class="Analysis">Analysis</h2>
-        <div class="One-Column">One Column</div>
-        <input type="text" name="name" class="txtname" placeholder="Name">
-        <select name="dropdown" id="one" class="dropdown">
-            <option value="Dropdown">Dropdown</option>
-        </select>
-        <textarea name="txtarea" id="area" cols="30" rows="10" placeholder="Multiple line" class="txtarea"></textarea>
-        <div class="Two-Column">Two Column</div>
-        <div class="box1"></div>
-        <h2 class="Analysis">Analysis</h2>
-        <div class="One-Column">One Column</div>
-        <input type="text" name="name" class="txtname" placeholder="Name">
-        <select name="dropdown" id="one" class="dropdown">
-            <option value="Dropdown">Dropdown</option>
-        </select>
-        <textarea name="txtarea" id="area" cols="30" rows="10" placeholder="Multiple line" class="txtarea"></textarea>
-
-        <div class="Two-Column">Two Column</div>
-        <input type="text" name="name2" placeholder="Name" class="txtname2">
-        <input type="password" name="password2" placeholder="Password" class="txtpwd2">
-        <fieldset class="fieldset">
-            <legend>Username</legend>
-            <input type="text" id="fname" placeholder="Johndoe" name="fname" style="border: none;">
-        </fieldset>
-        <select name="dropdown2" id="two" class="dropdown2">
-            <option value="Dropdown">Dropdown</option>
-        </select>
-
-        <div class="Three-Column">Three Column</div>
-        <fieldset class="fieldset2">
-            <legend>Focus</legend>
-            <input type="text" style="border: none;" name="focus">
-        </fieldset>
-        <fieldset class="fieldset3">
-            <legend>Password</legend>
-            <input type="password" style="border: none;" name="password" placeholder="• • • • • • • • •">
-        </fieldset>
-        <fieldset style="border:dotted;" class="fieldset4" disabled>
-            <legend>Disabled</legend>
-            <input type="text" name="disabled" placeholder="Johndoe" style="border: none;">
-        </fieldset>
-
-        <div class="Four-Column">Four Column</div>
-        <fieldset class="fieldset5">
-            <legend>Designation</legend>
-            <input type="text" style="border: none;" name="Designation" placeholder="UI Designer">
-        </fieldset>
-        <input type="text" name="name3" placeholder="Name" class="txtname3">
-        <fieldset class="fieldset6">
-            <legend>Username</legend>
-            <input type="text" style="border: none;" name="username" placeholder="Johndoe">
-        </fieldset>
-        <select name="dropdown3" id="three" class="dropdown3">
-            <option value="select">Select</option>
-        </select>
-        <div class="cap1">Enter valid data</div>
-        <div class="cap2">Enter your full Name as per ID</div>
-
-        <div class="OtherDesignElements">Other Design Elements</div>
-        <div class="FileUpload">File Upload</div>
-        <div class="file"></div>
-        <img src="images/cloud-upload-icon.svg" class="imgfile">
-        <h4 class="uploadfile">Upload</h4>
-        <div class="filenotselected">No item Selected</div>
-        <div class="Radio-Button">Radio Button</div>
-        <div class="rb1">
-            <!-- <input type="radio" id="opt1" name="opt1" value="R1">
-            <label for="opt1">Option 1</label> -->
-            <input type="radio" id="opt2" name="opt2" value="R2">
-            <label for="opt2">Option 1</label>
-            <input type="radio" id="opt2" name="opt2" value="R2" checked>
-            <label for="opt2">Option 2</label>
-        </div>
-        <div class="Checkbox">Checkbox</div>
-        <div class="cb1">
-            <input type="Checkbox" name="op1" value="option 1"><label>Option 1</label>
-            <input type="Checkbox" name="op2" value="option 2" checked><label>Option 2</label>
-        </div>
-
-        <div class="Snackbar">Snackbar</div>
-        <div class="b1"><img src="images/error-icon.svg" class="img1"><span style="color: #FF3535;" class="txt1"> This
-                is an error message!</span></div>
-        <div class="b2"><img src="images/info-icon.svg" class="img2"><span style="color: #00B9E1;" class="txt2">This is
-                an information message!</span></div>
-        <div class="b3"><img src="images/warning-icon.svg" class="img3"><span style="color: #FFA800;" class="txt3">This
-                is a warning message!</span></div>
-        <div class="b4"><img src="images/success-icon.svg" class="img4"><span style="color: #00AF27;" class="txt4">This
-                is a success message!</span></div>
-
-        <div class="Calltoaction">Call to action</div>
-        <div class="Primary">
-            <div class="p1">Primary</div>
-        </div>
-        <div class="Secondary">
-            <div class="p2">Secondary</div>
-        </div>
-
-        <div class="tabs">Tabs</div>
-        <div class="tab1">Tab 1</div>
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="tab2">Tab 2</div>
-        <div class="tab3">Tab 3</div>
-
-        <div class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-            release of Letraset sheets containing</div>
     </div>
 </body>
+<script>
+    let sidebar = document.getElementById("sidebar");
+    function hide(){
+        sidebar.classList.toggle("width-0")
+        sidebar.classList.toggle("slidebar-active")
+    }
+
+    function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+    }
+</script>
 </html>
