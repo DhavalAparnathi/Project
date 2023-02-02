@@ -1,0 +1,68 @@
+.right{
+    margin:auto !important;
+}
+
+.btn{
+    width: 100%;
+    border-radius: 23px !important;
+}
+
+.logoo{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center ;    */
+    margin-top: 4%;
+    justify-content: space-around;   
+}
+
+.dropdown{
+    width:20%;
+}
+
+a{
+    display: block;
+    width: 100%;
+}
+
+.lost{
+    display: flex;
+    justify-content: center !important;
+    margin-top: 4%;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.privacy{
+    display: inline-flex;
+}
+
+.cookie{
+    display: inline-flex;
+}
+
+.terms{
+    display: inline-flex;
+}
+.powered{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+
+h4{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center ;
+}
+
+p{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center ;
+}
+
+form{
+    margin-top: 4px;
+}
